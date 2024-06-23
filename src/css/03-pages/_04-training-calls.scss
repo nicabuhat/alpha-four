@@ -1,0 +1,104 @@
+.training-calls {
+  margin-bottom: 150px;
+  .wrapper {
+    overflow: visible;
+  }
+
+  &-header {
+    margin-right: 78px;
+    margin-bottom: 48px;
+    align-items: flex-end;
+  }
+
+  &__feature {
+    margin-top: 200px;
+    padding-bottom: 32px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      background-image: url(../images/bg-dots.svg);
+      background-repeat: no-repeat;
+
+      position: absolute;
+      top: -90px;
+      left: -80px;
+      height: 100%;
+      width: 100%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "04";
+      position: absolute;
+      top: -260px;
+      right: 0;
+
+      font-family: var(--font-space);
+      font-size: 150px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(18, 85, 255, 0.5);
+      opacity: 30%;
+    }
+  }
+
+  .section {
+    &__lead {
+      margin: 0;
+    }
+  }
+
+  .cards {
+    width: fit-content;
+    display: flex;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card--v2 {
+      min-width: 380px;
+      margin-right: 32px;
+
+      .card {
+        &-author {
+          &__name {
+            font-size: 16px;
+          }
+
+          &__caption {
+            font-size: 12px;
+          }
+        }
+        &-body {
+          &__title {
+            font-size: 18px;
+          }
+
+          &__text {
+            font-size: 12px;
+          }
+        }
+        &-footer {
+          display: flex;
+          &__btn {
+            width: 249px;
+            font-size: 16px;
+          }
+
+          .icon-bell {
+            transform: scale(0.75);
+          }
+        }
+      }
+    }
+  }
+
+  .icon-scroll-dots {
+    margin-top: 40px;
+  }
+}

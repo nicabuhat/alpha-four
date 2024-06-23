@@ -1,0 +1,133 @@
+.recommended-books {
+  .wrapper {
+    position: relative;
+    &::before {
+      content: "10";
+      position: absolute;
+      top: -90px;
+      right: 0;
+
+      font-family: var(--font-space);
+      font-size: 150px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(18, 85, 255, 0.5);
+      opacity: 30%;
+    }
+  }
+
+  .section {
+    &-header {
+      margin-bottom: 45px;
+    }
+  }
+}
+
+.books {
+  display: flex;
+  align-items: center;
+  position: relative;
+  margin-left: 62px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: white;
+    height: 100%;
+    width: 90%;
+    border-radius: 20px;
+    box-shadow: 0px 8.56494px 8.56494px rgba(0, 0, 0, 0.04);
+  }
+
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    background: url(../images/bg-dots-02.svg);
+    height: 100%;
+    width: 20%;
+    z-index: -2;
+    left: -62px;
+  }
+
+  &-feature {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    img {
+      height: 551.64px;
+      width: 393.68px;
+      margin-bottom: 22px;
+      filter: drop-shadow(0px 1.7303px 10.3818px rgba(0, 0, 0, 0.33));
+    }
+  }
+
+  &-body {
+    min-height: 658px;
+    display: flex;
+    flex-direction: column;
+    padding: 42px 60px;
+
+    &__btn {
+      margin-top: auto;
+      align-self: flex-end;
+      min-width: 271px;
+    }
+  }
+
+  &-list {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 44px;
+    grid-column-gap: 20px;
+    width: 430px;
+    margin-bottom: 50px;
+
+    &-item {
+      border-radius: 5px;
+      filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.25));
+
+      img {
+        border-radius: 5px;
+      }
+    }
+  }
+
+  &-review {
+    &__author {
+      display: inline-block;
+      color: var(--cl-ryb);
+      font-size: 14px;
+      letter-spacing: 0.08em;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 28px;
+    }
+
+    &-title {
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    &__title {
+      color: #0e1739;
+      font-size: 24px;
+      font-weight: 600;
+      margin-right: 26px;
+    }
+
+    &__text {
+      color: #0e1739;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 1.5;
+      letter-spacing: 0.02em;
+    }
+  }
+}

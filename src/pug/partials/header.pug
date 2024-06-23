@@ -1,0 +1,84 @@
+header#navbar_top.nhb_header
+  .container
+    nav.navbar.navbar-expand-lg.top_menu
+      a.navbar-brand(href='#')
+        img(src='images/nhb_logo.svg')
+      button.navbar-toggler(type='button' data-toggle='collapse' data-target='#navbarNavDropdown' aria-controls='navbarNavDropdown' aria-expanded='false' aria-label='Toggle navigation')
+        span.navbar-toggler-icon
+          .line-up
+          .line-base
+          .line-down
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul#navControls.navbar-nav.ml-auto
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/account.svg')
+              | Accountability Partner
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/share-fill.svg')
+              | Refer a friend
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/help.svg')
+              | Need help?
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/calendar-event-fill.svg')
+              | Calls Calendar
+          // <li class="nav-item"><a class="nav-link" href="#">Login</a></li>
+          li.nav-item.dropdown
+            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              | Welcome back, Alen
+            .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+              a.dropdown-item(href='#') Get Help
+              a.dropdown-item(href='#') My Profile
+              a.dropdown-item(href='#') Upgrade Plan
+              a.dropdown-item(href='#') Logout
+    nav.navbar.navbar-expand-lg.main_menu
+      #navbarNavDropdown.collapse.navbar-collapse
+        ul#navMain.navbar-nav
+          li.nav-item.active
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/today_nhb.svg')
+              | Today NHB
+          li.nav-item.dropdown
+            a#navbarDropdownMenuLink.nav-link.dropdown-toggle(href='#' role='button' data-toggle='dropdown' aria-haspopup='true' aria-expanded='false')
+              img.menu_icons(src='images/menu_icons/learning.svg')
+              | Learning
+            .dropdown-menu(aria-labelledby='navbarDropdownMenuLink')
+              a.dropdown-item(href='#') 7 Day Fast Start
+              a.dropdown-item(href='#') My Progress
+              a.dropdown-item(href='#') Something else here
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/training.svg')
+              | Training Calls
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/adviser.svg')
+              | My Advisor
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/roledex.svg')
+              | The Roledex
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/resources.svg')
+              | Resources
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/swipes.svg')
+              | Swipes
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/intg_network.svg')
+              | Integration Net.
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/job_search.svg')
+              | Job Board
+          li.nav-item
+            a.nav-link(href='#')
+              img.menu_icons(src='images/menu_icons/community.svg')
+              | Community

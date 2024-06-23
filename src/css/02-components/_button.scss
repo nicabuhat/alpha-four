@@ -1,0 +1,93 @@
+.btn {
+  font-family: var(--font-space);
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  border-radius: 62px;
+  background-color: var(--cl-ryb);
+  color: var(--cl-white);
+  cursor: pointer;
+}
+
+.btn--accent {
+  background-color: var(--cl-yellow);
+  color: var(--cl-ryb-dark);
+}
+
+.btn--gray {
+  background-color: rgba(224, 229, 245, 0.4);
+  color: var(--cl-dark-blue-gray);
+}
+
+.btn--outline {
+  background-color: unset;
+  border: 2px solid var(--cl-ryb);
+  color: var(--cl-ryb);
+}
+
+.btn__icon--left {
+  margin-right: 10px;
+}
+.btn__icon--right {
+  margin-left: 10px;
+}
+
+.btn--just-icon {
+  background: unset;
+  border: none;
+}
+
+.btn--close {
+  height: 52px;
+  width: 52px;
+  background-color: unset;
+  border: 1px solid rgba(110, 125, 186, 0.25);
+}
+
+.control-btn {
+  display: flex;
+}
+
+.badge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 20px;
+  min-width: 48px;
+  padding: 6px;
+  border-radius: 10px;
+
+  font-family: var(--font-space);
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+
+  &__icon {
+    margin-right: 6px;
+  }
+}
+
+.badge--rating {
+  background-color: #27c089;
+  color: white;
+}
+
+.icon--right {
+  margin-left: 10px;
+}
+
+.icon--left {
+  margin-right: 10px;
+}
+
+.link {
+  color: var(--cl-ryb);
+  font-family: var(--font-space);
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  cursor: pointer;
+}

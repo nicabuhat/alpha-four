@@ -1,0 +1,94 @@
+.training-video {
+  margin-top: 96px;
+  margin-bottom: 190px;
+
+  .wrapper {
+    position: relative;
+    &::before {
+      content: "03 ";
+      position: absolute;
+      top: -60px;
+      right: 0;
+
+      font-family: var(--font-space);
+      font-size: 150px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(18, 85, 255, 0.5);
+      opacity: 30%;
+    }
+  }
+
+  .section {
+    &__lead {
+      margin: 0;
+    }
+  }
+
+  &-header {
+    width: 100%;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 52px;
+
+    .control-btn {
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+
+  &__video {
+    background: linear-gradient(
+      0deg,
+      #13245f 0%,
+      #13245f 0%,
+      rgba(19, 36, 95, 0.9) 17.62%,
+      rgba(19, 36, 95, 0.0746909) 50%
+    );
+    height: 654px;
+    width: 1162.82px;
+    border-radius: 10px;
+    filter: drop-shadow(0px 4px 32px rgba(16, 55, 114, 0.43));
+  }
+
+  .card--outline {
+    padding-top: 76px;
+    margin-top: -54px;
+    z-index: -1;
+  }
+
+  .card--h1 {
+    min-height: 241px;
+    min-width: 762px;
+    margin-top: -44px;
+    z-index: -1;
+    background: url(../images/bg-dots.svg);
+    background-repeat: no-repeat;
+    background-position: calc(100% + 150px) -100%;
+
+    .card {
+      &-header {
+        width: 250px;
+        padding: 0;
+        &__img {
+          display: block;
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-body {
+        max-width: 320px;
+        padding-top: 60px;
+      }
+    }
+  }
+
+  &-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}

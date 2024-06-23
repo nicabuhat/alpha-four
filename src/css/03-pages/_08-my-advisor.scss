@@ -1,0 +1,328 @@
+.my-advisor {
+  margin-top: 96px;
+  margin-bottom: 72px;
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 34px;
+  }
+
+  .section {
+    &__title {
+      margin-bottom: 0;
+      position: relative;
+
+      &::before {
+        content: "08";
+        position: absolute;
+        top: -100px;
+        right: -200px;
+
+        font-family: var(--font-space);
+        font-size: 150px;
+        font-weight: 700;
+        color: transparent;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: rgba(18, 85, 255, 0.5);
+        opacity: 30%;
+      }
+    }
+  }
+
+  .row {
+    align-items: center;
+  }
+}
+
+.coach {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 8.56494px 8.56494px rgba(0, 0, 0, 0.04);
+  padding: 56px;
+
+  &-img {
+    position: relative;
+    margin-right: 36px;
+
+    img {
+      border-radius: 10px;
+    }
+
+    .badge {
+      position: absolute;
+      bottom: -2px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
+  &-header {
+    display: flex;
+    margin-bottom: 36px;
+  }
+  &-details {
+    display: flex;
+    flex-direction: column;
+
+    &__title {
+      color: var(--cl-ryb);
+      font-family: var(--font-space);
+      font-size: 14px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    &__name {
+      color: var(--cl-ryb-dark);
+      font-family: var(--font-space);
+      font-size: 36px;
+      font-weight: 700;
+    }
+
+    &__caption {
+      color: var(--cl-shadow-blue);
+      font-family: var(--font-space);
+      font-size: 18px;
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    &-social {
+      display: flex;
+
+      &__btn {
+        background-color: #e0e5f5;
+        height: 40px;
+        width: 40px;
+        border-radius: 10px;
+        margin-right: 12px;
+      }
+    }
+  }
+  &-specialties {
+    margin-bottom: 34px;
+    &__title {
+      color: var(--cl-ryb-dark);
+      font-family: var(--font-space);
+      font-size: 18px;
+      margin-bottom: 12px;
+    }
+    &-btns {
+      display: flex;
+      justify-content: space-between;
+
+      button {
+        padding: 0 20px;
+        font-size: 16px;
+      }
+    }
+  }
+  &-video {
+    &__video {
+      border-radius: 10px;
+      max-height: calc((100vw - 40px) / (16 / 9));
+      height: 307.6px;
+      width: 587.37px;
+      max-width: 100%;
+      filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1));
+      margin-bottom: 30px;
+    }
+
+    &__desc {
+      color: var(--cl-ryb-dark);
+      font-family: var(--font-space);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 150%;
+      letter-spacing: 0.02em;
+      margin-bottom: 22px;
+    }
+  }
+}
+
+.coach-session {
+  border: 1px solid #c4c4c4;
+  border-left: none;
+  border-radius: 0 10px 10px 0;
+  padding: 74px 34px 74px;
+  &-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 34px;
+    &__company {
+      color: var(--cl-dark-blue-gray);
+      font-family: var(--font-space);
+      font-size: 16px;
+      font-weight: 600;
+      margin-bottom: 20px;
+    }
+    &-title {
+      color: var(--cl-ryb-dark);
+      font-family: var(--font-space);
+      font-size: 24px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    &-time {
+      color: var(--cl-shadow-blue);
+      font-family: var(--font-space);
+      font-size: 18px;
+      font-weight: 700;
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &-subheader {
+    margin-bottom: 32px;
+    &-img {
+      display: flex;
+      align-items: center;
+      margin-bottom: 18px;
+      img {
+        width: 85px;
+        margin-right: 14px;
+      }
+      span {
+        color: var(--cl-ryb-dark);
+        font-family: var(--font-space);
+        font-size: 12px;
+        font-weight: 700;
+      }
+    }
+
+    &__lead {
+      color: var(--cl-dark-blue-gray);
+      font-family: var(--font-space);
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 130%;
+    }
+  }
+}
+
+.coach-session-calendar {
+  padding: 0;
+  border: none;
+  width: 100%;
+
+  .calendar {
+    &__title {
+      display: inline-block;
+      color: var(--cl-ryb-dark);
+      font-family: var(--font-space);
+      font-size: 18px;
+      font-weight: 700;
+      padding-bottom: 30px;
+    }
+
+    &-header {
+      padding: 0 0 24px;
+    }
+
+    &__week {
+      span {
+        width: unset;
+      }
+    }
+  }
+}
+
+.book-session {
+  margin-bottom: 96px;
+  .card {
+    border: none;
+    min-height: 245px;
+    margin-bottom: 32px;
+
+    &-header {
+      position: relative;
+      &__img {
+        width: 300px;
+        height: 100%;
+        object-fit: cover;
+      }
+      &-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        span {
+          display: block;
+          text-align: center;
+          color: white;
+          font-family: var(--font-space);
+        }
+        &__count {
+          font-size: 36px;
+          font-weight: 700;
+        }
+
+        &__apt {
+          font-size: 16px;
+          font-weight: 600;
+        }
+      }
+    }
+
+    &-body {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      margin-right: 80px;
+
+      div {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+      }
+      img {
+        width: 85px;
+        height: 30px;
+        margin-right: 12px;
+      }
+
+      span {
+        color: var(--cl-ryb-dark);
+        font-family: var(--font-space);
+        font-size: 12px;
+        font-weight: 700;
+      }
+
+      &__title {
+        margin-bottom: 24px;
+      }
+
+      &__text {
+        color: var(--cl-ryb-dark);
+        font-family: var(--font-space);
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+      }
+    }
+
+    &-btn {
+      align-self: center;
+
+      margin-right: 40px;
+
+      button {
+        font-size: 15px;
+        width: 244px;
+      }
+    }
+  }
+
+  &__btn {
+    margin: 0 auto;
+    width: 243px;
+  }
+}

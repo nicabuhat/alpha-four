@@ -1,0 +1,42 @@
+.section {
+  &__subtitle {
+    color: var(--cl-ryb);
+    font-family: var(--font-space);
+    font-size: 16px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 16px;
+  }
+
+  &__title {
+    font-family: var(--font-space);
+    font-size: 36px;
+    font-weight: 700;
+    color: var(--cl-ryb-dark);
+    margin-bottom: 32px;
+  }
+
+  &__lead {
+    color: #0e1739;
+    font-family: var(--font-space);
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: 0.02em;
+    margin-bottom: 22px;
+  }
+
+  &__hr {
+    border-top: 1px solid #7c8dbf;
+    margin: 0 0 20px;
+  }
+
+  &-footer {
+    display: flex;
+    justify-content: space-between;
+
+    &__btn {
+      margin: 56px auto 0;
+    }
+  }
+}

@@ -1,0 +1,208 @@
+.live-calendar {
+  background: url(../images/live-calendar-bg-overlay.svg);
+  background-size: contain;
+  background-position: left;
+  background-repeat: no-repeat;
+  margin-bottom: 96px;
+  .wrapper {
+    position: relative;
+    &::before {
+      content: "05";
+      position: absolute;
+      top: -60px;
+      right: 0;
+
+      font-family: var(--font-space);
+      font-size: 150px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(18, 85, 255, 0.5);
+      opacity: 30%;
+    }
+  }
+
+  .cards {
+    width: fit-content;
+    display: flex;
+    margin-bottom: 10px;
+    overflow-x: scroll;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+
+    .card--v2 {
+      min-width: 380px;
+      margin-right: 32px;
+
+      .card {
+        &-author {
+          &__name {
+            font-size: 16px;
+          }
+
+          &__caption {
+            font-size: 12px;
+          }
+        }
+        &-body {
+          &__title {
+            font-size: 18px;
+          }
+
+          &__text {
+            font-size: 12px;
+          }
+        }
+        &-footer {
+          display: flex;
+          &__btn {
+            width: 249px;
+            font-size: 16px;
+          }
+
+          .icon-bell {
+            transform: scale(0.75);
+          }
+        }
+      }
+    }
+  }
+
+  .icon-scroll-dots {
+    margin-top: 30px;
+  }
+}
+
+.calendar {
+  border: 1px solid #c4c4c4;
+  border-radius: 20px;
+  padding: 22px 0 10px;
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px 24px;
+  }
+
+  &__month {
+    color: var(--cl-ryb);
+    font-family: var(--font-space);
+    font-size: 18px;
+    font-weight: 700;
+  }
+
+  &__week {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    text-align: center;
+    margin-bottom: 14px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 66.43px;
+      height: 46px;
+
+      font-family: "SanFrancisco700";
+      font-weight: 700;
+      color: var(--cl-dark-blue-gray);
+    }
+  }
+
+  &-day {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    justify-content: space-between;
+    text-align: center;
+
+    &__btn {
+      height: 46px;
+      background-color: unset;
+
+      font-family: "SanFrancisco500";
+      font-weight: 500;
+      color: var(--cl-dark-blue-gray);
+
+      &--active {
+        position: relative;
+        color: white;
+        &::before {
+          content: "";
+          background-color: var(--cl-ryb);
+          border-radius: 100%;
+          position: absolute;
+          height: 45px;
+          width: 45px;
+          z-index: -1;
+        }
+      }
+    }
+  }
+
+  &-footer {
+    color: var(--cl-dark-blue-gray);
+    font-family: var(--font-space);
+    font-size: 12px;
+    padding: 26px 20px 20px;
+    display: flex;
+    align-items: flex-start;
+
+    &__timezone {
+      display: flex;
+      flex-direction: column;
+      margin-left: 16 px;
+    }
+  }
+}
+
+.events {
+  position: relative;
+  &::after {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 5px;
+    background-color: #edeff3;
+    position: absolute;
+    top: 0;
+    right: 15px;
+  }
+}
+.event {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 0 30px 20px 20px;
+  position: relative;
+
+  &-header {
+    color: var(--cl-ryb-dark);
+    font-family: var(--font-space);
+    font-size: 12px;
+    font-weight: 400;
+    margin-bottom: 20px;
+    padding: 0 14px;
+  }
+
+  &__btn {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  &__date {
+    margin: 0 10px;
+  }
+
+  &__name {
+    color: var(--cl-ryb-dark);
+    font-family: var(--font-space);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 1.3px;
+    padding: 0 90px 0 24px;
+  }
+}

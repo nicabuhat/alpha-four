@@ -1,0 +1,70 @@
+.resources {
+}
+
+.resources-card {
+  .card {
+    &-header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      padding: 42px 32px 26px;
+
+      &__title {
+        color: var(--cl-ryb-dark);
+        font-size: 20px;
+        font-weight: 600;
+        margin-bottom: 18px;
+      }
+
+      &__caption {
+        color: var(--cl-ryb);
+        font-size: 16px;
+        font-weight: 700;
+      }
+
+      &-img {
+        background: #e0e5f5;
+        height: 50px;
+        border-radius: 100%;
+        width: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &__hr {
+      padding: 0;
+      margin: 0 !important;
+      width: 100%;
+    }
+
+    &-body {
+      padding: 0;
+      &__text {
+        color: var(--cl-dark-blue-gray);
+        font-size: 14px;
+        line-height: 150%;
+        letter-spacing: 0.02em;
+        padding: 16px 32px 32px;
+      }
+
+      &-apps {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 12px;
+        margin-bottom: 70px;
+
+        img {
+          height: 60px;
+          width: 60px;
+        }
+      }
+    }
+    &-footer {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0 32px 16px;
+    }
+  }
+}

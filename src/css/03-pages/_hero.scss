@@ -1,0 +1,61 @@
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.landing {
+  background: url(../images/hero-bg.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.page {
+  padding-top: 88px;
+  margin-bottom: 62px;
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-bottom: 230px;
+
+  &__video {
+    height: 675px;
+    width: 1200px;
+    border-radius: 10px;
+  }
+}
+
+.intro {
+  &-header {
+    position: relative;
+    margin-bottom: 52px;
+    margin-top: -180px;
+
+    &__title {
+      color: white;
+      font-family: var(--font-space);
+      font-size: 28px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+  }
+
+  .btn--close {
+    position: absolute;
+    top: -10px;
+    right: 0;
+  }
+
+  .card {
+    background-color: unset;
+    &-header {
+      &__title {
+        width: 100%;
+      }
+    }
+  }
+}

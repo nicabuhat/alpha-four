@@ -1,0 +1,129 @@
+.article-spotlight {
+  margin-top: 150px;
+  margin-bottom: 96px;
+  .wrapper {
+    position: relative;
+    &::before {
+      content: "02";
+      position: absolute;
+      top: -60px;
+      right: 0;
+
+      font-family: var(--font-space);
+      font-size: 150px;
+      font-weight: 700;
+      color: transparent;
+      -webkit-text-stroke-width: 1px;
+      -webkit-text-stroke-color: rgba(18, 85, 255, 0.5);
+      opacity: 30%;
+    }
+  }
+
+  &-article {
+    .card {
+      background-color: white;
+      box-shadow: 2px -1px 52px rgba(0, 0, 0, 0.05);
+
+      &-header {
+        &__img {
+          height: 265px;
+          width: 100%;
+          object-fit: cover;
+        }
+      }
+
+      &-subheader {
+        padding: 38px 58px;
+        align-items: center;
+        justify-content: flex-start;
+      }
+
+      &-author {
+        &__img {
+          height: 44px;
+          width: 44px;
+          position: static;
+          margin-right: 18px;
+        }
+
+        &__name {
+          margin-top: 0;
+        }
+      }
+
+      &-body {
+        padding: 0 58px 56px;
+        &__title {
+          color: #0e183c;
+          font-size: 36px;
+        }
+        &__text {
+          color: black;
+          font-size: 18px;
+          font-weight: 400;
+          letter-spacing: 0.02em;
+          line-height: 1.5;
+        }
+      }
+
+      &-footer {
+        padding: 0 58px 72px;
+        justify-content: center;
+      }
+    }
+  }
+
+  &-cards {
+    z-index: -1;
+    .cards {
+      margin-top: 26px;
+      padding: 0 40px;
+      background-color: #f9f9f9;
+      border-radius: 0 10px 0 0;
+      box-shadow: 0px 8.56494px 8.56494px rgba(0, 0, 0, 0.04);
+    }
+
+    .card--v2 {
+      background-color: unset;
+      box-shadow: none;
+      border: none;
+
+      .card {
+        &-subheader {
+          padding: 32px 0 14px;
+        }
+
+        &-author {
+          &__icon {
+            background-color: var(--cl-yellow);
+          }
+        }
+        &-body {
+          padding: 0 0 38px;
+
+          &__text {
+            margin: 0;
+          }
+        }
+      }
+    }
+
+    hr {
+      margin: 0;
+    }
+
+    &-footer {
+      height: 94px;
+      background-color: white;
+      border-radius: 0 0 10px 0;
+      box-shadow: 0px 8.56494px 8.56494px rgba(0, 0, 0, 0.04);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card--outline {
+      margin: 28px;
+    }
+  }
+}
